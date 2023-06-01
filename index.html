@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" >
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Column Bank</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__body">
+                    <div class="header__logo"><img src="./images/header/logo.svg" alt=""></div>
+                    <div class="header__menu menu">
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="#" class="menu__link">Products</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Developers</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Company</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__login login" data-da=".menu__body, 900, 1">
+                        <ul class="login__list">
+                            <li class="login__item"><a href="#" class="login__links">Log in</a></li>
+                            <li class="login__item"><a href="#" class="login__links">Sign up</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="menu__icon icon-menu"><span></span></button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="start">
+                <div class="start__container">
+                    <div class="start__content">
+                        <div class="start__subtitle">Column N.A. Member FDIC</div>
+                        <h1 class="start__title">The developer<br>infrastructure bank</h1>
+                        <p class="start__text">The only nationally chartered bank built to enable developers and builders to create new financial products</p>
+                        <div class="start__buttons">
+                            <a href="#" class="start__button _button-solid">Start building</a>
+                            <a href="#" class="start__button _button-border">Read documentation</a>
+                        </div>
+                    </div>
+                    <div class="start__demo">
+                        <pre class="start__code"><code><span class="code-light_blue">curl</span> https://api.column.com/transfers/wire  \
+-u :prod_1vWeqakwT2N7NYRtZkUPSBt4scn    \
+-d <span class="code-snow_blue">counterparty_id</span> <span class="code-pale">=</span>cpty_1vWeqakwT2N7NYRtZkUPSBt4scn   \
+-d <span class="code-snow_blue">bank_account_id</span> <span class="code-pale">=</span>bacc_1vWeqakwT2N7NYRtZkUPSBt4scn   \
+-d <span class="code-snow_blue">amount</span><span class="code-pale">=</span><span class="code-wisteria_crayola">40000</span>    \
+-d <span class="code-snow_blue">description</span> <span class="code-pale">=</span><span class="code-pale">"Visa daily settlement"</span></code></pre>
+                        <img src="./images/start/transfer-image.jpg" alt="" class="start__image">
+                    </div>
+                </div>
+            </section>
+            <section class="advantage">
+                <div class="advantage__container">
+                    <div class="advantage__content">
+                        <div class="advantage__subtitle">Our advantage</div>
+                        <h2 class="advantage__title"><span>Financial services</span>as code</h2>
+                        <p class="advantage__text"><span>Before Column,</span><br>new financial companies had to work through expensive middleware providers that wrapped legacy sponsor banks. These relied upon outdated and limiting core systems.</p>
+                        <p class="advantage__text"><span>Column</span><br>allows you to get to the bare metal. We are a bank made for developers and we have built our own core, ledger, and data model for the purpose of powering your unique use case, at any scale.</p>
+                    </div>
+                    <div class="advantage__diagram" data-da=".advantage__content, 991.98, 2">
+                        <img src="./images/advantage/Diagram.svg" alt="" class="advantage__image">
+                    </div>
+                </div>
+            </section>
+            <section class="commentary">
+                <div class="commentary__container">
+                    <article class="commentary__content">
+                        <p class="commentary__text">We know the ecosystem very well and Column provides the speed, flexible account model and API-first approach that no one else can. These aspects are essential to building certain products that power our customers' growth.</p>
+                        <div class="commentary__author"><span>Henrique Dubugras</span> — Co-Founder and Co-CEO, Brex</div>
+                    </article>
+                    <hr class="commentary__line">
+                </div>
+            </section>
+            <section class="in-action">
+                <div class="in-action__container">
+                    <div class="in-action__content">
+                        <img src="./images/in-action/brex-logo.svg" alt="Logo Brex" class="in-action__image-logo">
+                        <div class="in-action__subtitle">In action</div>
+                        <h2 class="in-action__title"><span>The power of a nationally</span>chartered bank</h2>
+                        <div class="in-action__content-blocks content-blocks">
+                            <div class="content-blocks__block">
+                                <h3 class="content-blocks__title">Move and hold money</h3>
+                                <p class="content-blocks__text">Leverage Column's direct connection to the Federal Reserve. Pull and push money to any bank account and create flexible FDIC insured accounts.</p>
+                                <ul class="content-blocks__breadcrumbs">
+                                    <li class="content-blocks__breadcrumb"><a href="#">ACH</a></li>
+                                    <li class="content-blocks__breadcrumb"><a href="#">Wire</a></li>
+                                    <li class="content-blocks__breadcrumb"><a href="#">Bank Accounts</a></li>
+                                    <li class="content-blocks__breadcrumb"><a href="#">Book Transfers</a></li>
+                                    <li class="content-blocks__breadcrumb"><a href="#">Checks</a></li>
+                                </ul>
+<pre class="content-blocks__code"><code><span class="code-light_blue">curl</span> https://api.column.com/transfers/ach  \
+-u :prod_1vWeqakwT2N7NYRtZkUPSBt4scn    \
+-d <span class="code-snow_blue">counterparty_id</span> <span class="code-pale">=</span>cpty_1vWeqakwT2N7NYRtZkUPSBt4scn  \
+-d <span class="code-snow_blue">bank_account_id</span> <span class="code-pale">=</span>bacc_1vWeqakwT2N7NYRtZkUPSBt4scn  \
+-d <span class="code-snow_blue">amount</span><span class="code-pale">=</span><span class="code-wisteria_crayola">241</span>  \
+-d <span class="code-snow_blue">type</span>    <span class="code-pale">=</span>DEBIT  \
+-d <span class="code-snow_blue">currency_code</span>   <span class="code-pale">=</span>USD \
+-d <span class="code-snow_blue">description</span> <span class="code-pale">="Recurring bill"</span>
+</code></pre>
+                            </div>
+                            <div class="content-blocks__block">
+                                <h3 class="content-blocks__title">Build a modern card program</h3>
+                                <p class="content-blocks__text">Manage your own card program and optimize interchange revenue. Launch a debit or credit program with any issuer processor.</p>
+                                <ul class="content-blocks__breadcrumbs">
+                                    <li class="content-blocks__breadcrumb"><a href="#">Card Programs</a></li>
+                                </ul>
+<pre class="content-blocks__code"><code><span class="code-light_blue">curl</span> https://api.column.com/bank-accounts  \
+-u :prod_1vWeqakwT2N7NYRtZkUPSBt4scn    \
+-d <span class="code-snow_blue">entity_id</span> <span class="code-pale">=</span>ent_1vWeqakwT2N7NYRtZkUPSBt4scn  \
+-d <span class="code-snow_blue">description</span> <span class="code-pale">="NeoBankCo Visa Debit Settlement Account"</span>
+</code></pre>
+                            </div>
+                            <div class="content-blocks__block">
+                                <h3 class="content-blocks__title">Lend money</h3>
+                                <p class="content-blocks__text">Grow originations faster with bank funding from day one. Become an originating partner and expand your program nationally.</p>
+                                <ul class="content-blocks__breadcrumbs">
+                                    <li class="content-blocks__breadcrumb"><a href="#">Loan Origination</a></li>
+                                    <li class="content-blocks__breadcrumb"><a href="#">Debt Financing</a></li>
+                                    <li class="content-blocks__breadcrumb"><a href="#">Loan Purchase</a></li>
+                                </ul>
+<pre class="content-blocks__code"><code><span class="code-light_blue">curl</span> https://api.column.com/transfers/book  \
+-u :prod_1vWeqakwT2N7NYRtZkUPSBt4scn    \
+-d <span class="code-snow_blue">counterparty_id</span> <span class="code-pale">=</span>cpty_1vWeqakwT2N7NYRtZkUPSBt4scn  \
+-d <span class="code-snow_blue">bank_account_id</span> <span class="code-pale">=</span>bacc_1vWeqakwT2N7NYRtZkUPSBt4scn  \
+-d <span class="code-snow_blue">amount</span><span class="code-pale">=</span><span class="code-wisteria_crayola">2450000</span>  \
+-d <span class="code-snow_blue">description</span>    <span class="code-pale">="Warehouse drawdown"</span>  \
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="in-action__demo">
+                        <div class="in-action__demo-body">
+                            <img src="./images/in-action/personal-cabinet.png" alt="Personal cabinet Culomn Bank" class="in-action__image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="why-column">
+                <div class="why-column__container">
+                    <div class="why-column__subtitle">Why Column</div>
+                    <h2 class="why-column__title">Created by engineers and founders</h2>
+                    <a href="" class="why-column__link">About our company</a>
+                    <dl class="why-column__list">
+                        <div class="why-column__item">
+                            <dt>Close to the metal</dt>
+                            <dd>We connect directly to the Federal Reserve with dedicated hardware, built our own ledger and core, and don't use any middleware. We then expose this directly to you.</dd>
+                        </div>
+
+                        <div class="why-column__item">
+                            <dt>Efficient compliance</dt>
+                            <dd>We are a team of experienced compliance experts focused on helping you ship product. We expose tools to give you transparency and visibility into our compliance program and are focused on moving fast and efficiently, no matter the complexity of your program.</dd>
+                        </div>
+
+                        <div class="why-column__item">
+                            <dt>Dedicated partners</dt>
+                        <dd>We are the only bank that is dedicated to providing services to developers and builders, and nothing else. We do not operate competing programs nor are we distracted by other business lines.</dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+            <section class="products">
+                <div class="products__container">
+                    <div class="products__subtitle">More products</div>
+                    <h2 class="products__title"><span>Infrastructure products</span> built for developers in the lightest format possible</h2>
+                    <div class="products__cards">
+                        <div class="products__card">
+                            <img src="./images/products/ach.svg" alt="" class="products__card-image">
+                            <div class="products__card-title">ACH</div>
+                            <p class="products__card-title-text">Originate ACH credits and debits with a single API request. Utilize all five settlement windows, configure every NACHA option and control every step.</p>
+                            <a href="" class="products__card-link">Learn more</a>
+                        </div>
+                        <div class="products__card">
+                            <img src="./images/products/wire.svg" alt="" class="products__card-image">
+                            <div class="products__card-title">Wire</div>
+                            <p class="products__card-title-text">Transfer funds immediately to any bank account through FedWire via API. Receive domestic and international wires with instant updates and all the raw data.</p>
+                            <a href="" class="products__card-link">Learn more</a>
+                        </div>
+                        <div class="products__card">
+                            <img src="./images/products/book-transfers.svg" alt="" class="products__card-image">
+                            <div class="products__card-title">Book Transfers</div>
+                            <p class="products__card-title-text">When you own both accounts at Column, transfers are real-time every second of the day.</p>
+                            <a href="" class="products__card-link">Learn more</a>
+                        </div>
+                        <div class="products__card">
+                            <img src="./images/products/ledger.svg" alt="" class="products__card-image">
+                            <div class="products__card-title">Ledger</div>
+                            <p class="products__card-title-text">Ledger each transaction automatically onto our system of record. Complete visibility and full banking functionality with the ease of an API.</p>
+                            <a href="" class="products__card-link">Learn more</a>
+                        </div>
+                        <div class="products__card">
+                            <img src="./images/products/bank-accounts.svg" alt="" class="products__card-image">
+                            <div class="products__card-title">Bank Accounts</div>
+                            <p class="products__card-title-text">Spin up programmable and scalable FDIC insured bank accounts for your customers in one API call. All from our robust, easy to use developer platform.</p>
+                            <a href="" class="products__card-link">Learn more</a>
+                        </div>
+                        <div class="products__card">
+                            <img src="./images/products/card-programs.svg" alt="" class="products__card-image">
+                            <div class="products__card-title">Card Programs</div>
+                            <p class="products__card-title-text">Build a customized card program that fits your stage. With a dedicated BIN and the choice of issuing processors, you maintain control.</p>
+                            <a href="" class="products__card-link">Learn more</a>
+                        </div>
+                        <div class="products__card">
+                            <img src="./images/products/checks.svg" alt="" class="products__card-image">
+                            <div class="products__card-title">Checks</div>
+                            <p class="products__card-title-text">Take full control of the end to end check flows. From RDC to checkbooks to positive-pay, we allow you to build your optimal check flow and own the entire process.</p>
+                            <a href="" class="products__card-link">Learn more</a>
+                        </div>
+                    </div>
+                    <h3 class="products__title"><span>Credit products</span> for companies to scale lending programs faster and cheaper</h3>
+                    <div class="products__cards">
+                        <div class="products__card">
+                            <img src="./images/products/loan-origination.svg" alt="" class="products__card-image">
+                            <div class="products__card-title">Loan Origination</div>
+                            <p class="products__card-title-text">Build a modern national lending program in partnership with Column.</p>
+                            <a href="" class="products__card-link">Learn more</a>
+                        </div>
+                        <div class="products__card">
+                            <img src="./images/products/debt-financing.svg" alt="" class="products__card-image">
+                            <div class="products__card-title">Debt Financing</div>
+                            <p class="products__card-title-text">Grow your lending program more efficiently with Column capital, whether you are at scale or on your way.</p>
+                            <a href="" class="products__card-link">Learn more</a>
+                        </div>
+                        <div class="products__card">
+                            <img src="./images/products/loan-purchase.svg" alt="" class="products__card-image">
+                            <div class="products__card-title">Loan Purchase</div>
+                            <p class="products__card-title-text">Programmatically sell the loans you originate to Column.</p>
+                            <a href="" class="products__card-link">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="partners">
+                <div class="partners__container">
+                    <div class="partners__block-one partners__block-content">
+                        <div class="partners__subtitle">partners</div>
+                        <h2 class="partners__title">Your partner at any scale</h2>
+                        <dl class="partners__block-text">
+                            <dt>Not our first rodeo</dt>
+                            <dd>We previously founded and built companies like Plaid, Square and Affirm where we had to rely on archaic banks and middleware providers. We built the bank we wish we had.</dd>
+                        </dl>
+                        <div class="partners__companies">
+                            <img src="./images/partners/square.svg" alt="">
+                            <img src="./images/partners/plaid.svg" alt="">
+                            <img src="./images/partners/fb.svg" alt="">
+                        </div>
+                        <dl class="partners__block-text">
+                            <dt>Our promise</dt>
+                            <dd>Column is funded and owned by our founders and employees. A clear ownership structure and a long term view enables us to be solely focused on building technology the right way and being an incredible partner.</dd>
+                        </dl>
+                        <a href="" class="partners__link">About our company</a>
+                    </div>
+                    <div class="partners__block-two partners__block-content">
+                        <p class="partners__text">As the backbone for the largest and most sophisticated fintechs and enterprises, we are built to scale with anyone who needs speed, control, and to be as close to the Federal Reserve as possible.</p>
+                        <img src="./images/partners/bg.svg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="start-building">
+                <div class="start-building__body">
+                    <div class="start-building__container">
+                        <div class="start-building__block-content">
+                            <h2 class="start-building__title">Start building today</h2>
+                            <p class="start-building__text">Unmatched access to money movement, bank accounts, card networks, and bank capital. By working with us, you're in the driver's seat to build your own products, on your terms, without layers in between.</p>
+                            <div class="start-building__buttons">
+                                <a href="" class="start-building__button _button-solid">Start building</a>
+                                <a href="" class="start-building__button _button-border">Contact Sales</a>
+                            </div>
+                        </div>
+                        <div class="start-building__block-links">
+                            <ul class="start-building__list-links">
+                                <li class="start-building__link">
+                                    <div class="start-building__link-block">
+                                        <div class="start-building__link-image">
+                                            <img src="./images/start-building/api.svg" alt="">
+                                        </div>
+                                        <div class="start-building__link-content">
+                                            <div class="start-building__link-title">Documentation</div>
+                                            <div class="start-building__link-text">Explore and familiarize yourself with our APIs</div>
+                                        </div>
+                                    </div>
+                                    <div class="start-building__link-link">
+                                        <a href="#"><img src="./images/remainder/arrow-black.svg" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="start-building__link">
+                                    <div class="start-building__link-block">
+                                        <div class="start-building__link-image">
+                                            <img src="./images/start-building/documentation.svg" alt="">
+                                        </div>
+                                        <div class="start-building__link-content">
+                                            <div class="start-building__link-title">Getting started with the API</div>
+                                            <div class="start-building__link-text">Quickly get up to speed</div>
+                                        </div>
+                                    </div>
+                                    <div class="start-building__link-link">
+                                        <a href="#"><img src="./images/remainder/arrow-black.svg" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__container">
+                    <div class="footer__top-body">
+                        <img src="./images/footer/logo.svg" alt="" class="footer__logo">
+                        <div class="footer__top-menu">
+                            <div data-spollers="767.98,max" class="spollers footer__top-menu-spollers">
+                                <div class="spollers__item">
+                                    <button type="button" data-spoller class="spollers__title">Products</button>
+                                    <div class="spollers__body">
+                                        <ul class="footer__top-menu-list">
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">ACH</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Book Transfers</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Bank Accounts</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Loan Origination</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Loan Purchase</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-spollers="767.98,max" class="spollers footer__top-menu-spollers">
+                                <div class="spollers__item">
+                                    <button type="button" data-spoller class="spollers__title">Finance</button>
+                                    <div class="spollers__body">
+                                        <ul class="footer__top-menu-list">
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Wire</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Ledger</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Card Programs</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Debt Financing</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-spollers="767.98,max" class="spollers footer__top-menu-spollers">
+                                <div class="spollers__item">
+                                    <button type="button" data-spoller class="spollers__title">Developers</button>
+                                    <div class="spollers__body">
+                                        <ul class="footer__top-menu-list">
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Documentation</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Status</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Changelog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-spollers="767.98,max" class="spollers footer__top-menu-spollers">
+                                <div class="spollers__item">
+                                    <button type="button" data-spoller class="spollers__title">Company</button>
+                                    <div class="spollers__body">
+                                        <ul class="footer__top-menu-list">
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Company</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Careers</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Press</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Blog</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Security</a></li>
+                                            <li class="footer__top-menu-item"><a href="#" class="footer__top-menu-link">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__bottom">
+                <div class="footer__container">
+                    <div class="footer__bottom-body">
+                        <div class="footer__bottom-copy">
+                            <img src="./images/footer/copy-logo.svg" alt="">
+                            Column N.A. Member FDIC
+                        </div>
+                        <ul class="footer__bottom-links">
+                            <li class="footer__bottom-links-item"><a href="" class="footer__bottom-links-link">Privacy Notice</a></li>
+                            <li class="footer__bottom-links__item"><a href="" class="footer__bottom-links-link">Privacy Policy</a></li>
+                            <li class="footer__bottom-links__item"><a href="" class="footer__bottom-links-link footer__bottom-links-link-image"><img src="./images/footer/twitter.svg" alt="Twitter"></a></li>
+                            <li class="footer__bottom-links__item"><a href="" class="footer__bottom-links-link footer__bottom-links-link-image"><img src="./images/footer/instagram.svg" alt="Instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/libs/dynamic_adapt.js"></script>
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>
